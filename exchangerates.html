@@ -1,10 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(161deg, #AA076B, #61045F);
+            font-family: Arial, sans-serif;
+        }
+        fxwidget-cc {
+            /* Add any specific styling for your widget here if needed */
+        }
+    </style>
 </head>
 <body>
-
-<!-- START CODE Attention! Do not modify this code; --><script>var fm = "USD";var to = "ZAR";var tz = "2";var sz = "1x127";var lg = "en";var st = "success";var cd = 1;var am = 1</script><script src="//currencyrate.today/exchangerates"></script><div style="text-align:right"><a href="https://currencyrate.today">CurrencyRate</a></div><!-- Attention! Do not modify this code; END CODE -->
-
-Source: https://currencyrate.today/exchangerates-widget
+    <fxwidget-cc amount="100" decimals="2" large="false" shadow="true" symbol="true" grouping="true" border="true" from="USD" to="ZAR" background-color="#AA076B" lang="en"></fxwidget-cc>
+    <a href="https://currencyrate.today/">CurrencyRate</a>
+    <script async src="https://s.fx-w.io/widgets/currency-converter/latest.js?en"></script>
 </body>
 </html>
